@@ -37,7 +37,9 @@ This project analyses the real Starbucks dataset provided by [Udacity](https://w
 
 ## Main results
 
-The analysis implemented in this project resulted in the development of three different machine learning models based on linear regression to estimate the expected net revenue of each offer. 
+The analysis implemented in this project resulted in the development of three different machine learning models based on linear regression to estimate the expected net revenue of each offer, as shown in the schematic below. 
+
+![alt text](/Recommendation Engine.png )
 
 By comparing the Mean Squared Error (MSE) of each of these three machine learning model, it could be concluded that the model that uses the whole client profile can assure the lowest MSE. Consequently, the designed recommendation engine uses this model to determine the best offer to send to a client.
 
