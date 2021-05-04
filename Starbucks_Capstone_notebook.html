@@ -13150,6 +13150,38 @@ div#notebook {
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">platform</span> <span class="k">import</span> <span class="n">python_version</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">python_version</span><span class="p">())</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>3.6.3
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13196,7 +13228,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import all necessary libraries</span>
@@ -13229,7 +13261,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[4]:</div>
+    <div class="prompt output_prompt">Out[1]:</div>
 
 
 
@@ -13254,7 +13286,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">portfolio</span>
@@ -13270,7 +13302,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[2]:</div>
 
 
 
@@ -13405,7 +13437,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">portfolio</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -13537,7 +13569,7 @@ memory usage: 560.0+ bytes
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">clean_portfolio</span><span class="p">(</span><span class="n">portfolio</span><span class="p">):</span>
@@ -13569,7 +13601,7 @@ memory usage: 560.0+ bytes
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[42]:</div>
 
 
 
@@ -13788,7 +13820,7 @@ Number of unique ids: 10
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">profile</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -13804,7 +13836,7 @@ Number of unique ids: 10
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -14034,7 +14066,7 @@ Number of null values in became_member_on column: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">transcript</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -14050,7 +14082,7 @@ Number of null values in became_member_on column: 0
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[16]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -14198,7 +14230,45 @@ memory usage: 9.4+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">transcript</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;event&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Quantity&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">transcript</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;person&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -14214,7 +14284,7 @@ memory usage: 9.4+ MB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[19]:</div>
+    <div class="prompt output_prompt">Out[31]:</div>
 
 
 
@@ -14284,6 +14354,37 @@ memory usage: 9.4+ MB
 </div>
 </div>
 
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Average number of historic in the transcrip per client:&#39;</span><span class="p">,</span> <span class="n">transcript</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;person&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Average number of historic in the transcrip per client: 18.0314117647
+</pre>
+</div>
 </div>
 
 </div>
@@ -14510,7 +14611,7 @@ memory usage: 9.4+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">clean_user_profile_dataframe</span><span class="p">(</span><span class="n">profile</span><span class="p">):</span>
@@ -14573,7 +14674,7 @@ memory usage: 9.4+ MB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[22]:</div>
+    <div class="prompt output_prompt">Out[41]:</div>
 
 
 
@@ -14618,7 +14719,7 @@ memory usage: 9.4+ MB
       <th>0610b486422d4921ae7d2bf64640c50b</th>
       <td>55</td>
       <td>112000.0</td>
-      <td>1388</td>
+      <td>1389</td>
       <td>1</td>
       <td>0</td>
       <td>0</td>
@@ -14627,7 +14728,7 @@ memory usage: 9.4+ MB
       <th>78afa995795e4d85b5d9ceeca43f5fef</th>
       <td>75</td>
       <td>100000.0</td>
-      <td>1455</td>
+      <td>1456</td>
       <td>1</td>
       <td>0</td>
       <td>0</td>
@@ -14636,7 +14737,7 @@ memory usage: 9.4+ MB
       <th>e2127556f4f64592b11af22de27a7932</th>
       <td>68</td>
       <td>70000.0</td>
-      <td>1103</td>
+      <td>1104</td>
       <td>0</td>
       <td>1</td>
       <td>0</td>
@@ -14645,7 +14746,7 @@ memory usage: 9.4+ MB
       <th>389bc3fa690240e798340f5a15918d5c</th>
       <td>65</td>
       <td>53000.0</td>
-      <td>1179</td>
+      <td>1180</td>
       <td>0</td>
       <td>1</td>
       <td>0</td>
@@ -14654,7 +14755,7 @@ memory usage: 9.4+ MB
       <th>2eeac8d8feae4a8cad5a6af0499a211d</th>
       <td>58</td>
       <td>51000.0</td>
-      <td>1269</td>
+      <td>1270</td>
       <td>0</td>
       <td>1</td>
       <td>0</td>
@@ -14672,7 +14773,7 @@ memory usage: 9.4+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Show some statistics about the profile_clean dataframe</span>
@@ -14712,7 +14813,7 @@ Number of O: 212
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[23]:</div>
+    <div class="prompt output_prompt">Out[35]:</div>
 
 
 
@@ -30156,7 +30257,7 @@ Average client time of woman (days): 1525.15532713
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Read cleaned client transcript to csv file</span>
@@ -30174,7 +30275,7 @@ Average client time of woman (days): 1525.15532713
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[29]:</div>
+    <div class="prompt output_prompt">Out[37]:</div>
 
 
 
@@ -30298,7 +30399,7 @@ Average client time of woman (days): 1525.15532713
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Visualise in bar graphs the average revenue per offer</span>
@@ -30336,7 +30437,7 @@ Average client time of woman (days): 1525.15532713
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Show the average performance for each offer</span>
@@ -30353,7 +30454,7 @@ Average client time of woman (days): 1525.15532713
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[31]:</div>
+    <div class="prompt output_prompt">Out[39]:</div>
 
 
 
@@ -30461,7 +30562,7 @@ Average client time of woman (days): 1525.15532713
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Join the client profile data with offer net revenue in a unique dataframe and portfolio channels</span>
@@ -30481,7 +30582,7 @@ Average client time of woman (days): 1525.15532713
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Show the joined dataframe</span>
@@ -30498,7 +30599,7 @@ Average client time of woman (days): 1525.15532713
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[34]:</div>
+    <div class="prompt output_prompt">Out[44]:</div>
 
 
 
@@ -30552,7 +30653,7 @@ Average client time of woman (days): 1525.15532713
       <td>1</td>
       <td>33</td>
       <td>72000.0</td>
-      <td>1473</td>
+      <td>1474</td>
       <td>0</td>
       <td>1</td>
       <td>0</td>
@@ -30570,7 +30671,7 @@ Average client time of woman (days): 1525.15532713
       <td>1</td>
       <td>33</td>
       <td>72000.0</td>
-      <td>1473</td>
+      <td>1474</td>
       <td>0</td>
       <td>1</td>
       <td>0</td>
@@ -30588,7 +30689,7 @@ Average client time of woman (days): 1525.15532713
       <td>0</td>
       <td>33</td>
       <td>72000.0</td>
-      <td>1473</td>
+      <td>1474</td>
       <td>0</td>
       <td>1</td>
       <td>0</td>
@@ -30606,7 +30707,7 @@ Average client time of woman (days): 1525.15532713
       <td>1</td>
       <td>33</td>
       <td>72000.0</td>
-      <td>1473</td>
+      <td>1474</td>
       <td>0</td>
       <td>1</td>
       <td>0</td>
@@ -30624,10 +30725,133 @@ Average client time of woman (days): 1525.15532713
       <td>1</td>
       <td>33</td>
       <td>72000.0</td>
-      <td>1473</td>
+      <td>1474</td>
       <td>0</td>
       <td>1</td>
       <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_client_profile_offer_mean</span> <span class="o">=</span> <span class="n">df_client_profile_offer</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">2</span><span class="p">:]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">df_client_profile_offer_mean</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Information&#39;</span><span class="p">,</span><span class="s1">&#39;Average&#39;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[57]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Information</th>
+      <th>Average</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>is_offer_viewed</td>
+      <td>0.783417</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>is_offer_completed</td>
+      <td>0.520549</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>net_revenue</td>
+      <td>19.326733</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>email</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>mobile</td>
+      <td>0.898859</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>social</td>
+      <td>0.598517</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>web</td>
+      <td>0.799612</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>age</td>
+      <td>54.369258</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>income</td>
+      <td>65371.618472</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>client_duration_days</td>
+      <td>1534.901174</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>F</td>
+      <td>0.412866</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>M</td>
+      <td>0.573360</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>O</td>
+      <td>0.013774</td>
     </tr>
   </tbody>
 </table>
